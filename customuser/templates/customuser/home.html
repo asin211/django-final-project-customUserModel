@@ -1,0 +1,26 @@
+<h1>Home Page</h1>
+
+<!-- {% for user in users %}
+{% if user.role == 'Admin' %}
+<p>Admin: {{user.name}}</p>
+{% elif user.role == 'Manager' %}
+<p>Manager: {{user.name}}</p>
+{% else %}
+<p>Normal Users: {{user.name}}</p>
+{% endif %}
+{% endfor %} -->
+
+<!-- {% for i in recipe %}
+<p>{{i}}</p>
+{% endfor %} -->
+
+{% for recipe in recipes %}
+<p>{{recipe.name}}</p>
+{% endfor %}
+
+{% for review in reviews %}
+{% if review.recipe_id == 3 %}
+<p>{{review.review}}</p>
+{% endif %}
+
+{% endfor %}
